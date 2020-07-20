@@ -52,7 +52,7 @@ let persons = [
         "id": 4
       },
 ]
-/*
+
 app.get('/', (req, res) => {
     res.send('<h1>Osa 3</h1>')
 })
@@ -63,7 +63,7 @@ const generateId = () => {
         : 0
     return maxId + 1
 }
-*/
+
 
 app.get('/api/persons', (req, res) => {
     Person.find({}).then(persons => {
