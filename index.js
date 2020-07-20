@@ -5,17 +5,7 @@ const app = express()
 const cors = require('cors')
 const Person = require('./models/person')
 const { response } = require('express')
-/*
-3.13: puhelinluettelo ja tietokanta, step1
-Muuta backendin kaikkien puhelintietojen näyttämistä siten, että se hakee näytettävät puhelintiedot tietokannasta.
 
-Varmista, että frontend toimii muutosten jälkeen.
-
-Tee tässä ja seuraavissa tehtävissä Mongoose-spesifinen koodi omaan moduuliin samaan tapaan kuin luvussa Tietokantamäärittelyjen eriyttäminen moduuliksi.
-
-3.14: puhelinluettelo ja tietokanta, step2
-Muuta backendiä siten, että uudet numerot tallennetaan tietokantaan. Varmista, että frontend toimii muutosten jälkeen.
-*/
 morgan.token('daTa', function getResponse (res) {
     if (JSON.stringify(res.body) === '{}') {
         return ""
