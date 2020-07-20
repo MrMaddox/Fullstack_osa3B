@@ -29,7 +29,7 @@ app.use(cors())
 app.use(express.json())
 app.use(morgan(":method :url :status :res[content-length] - :response-time ms :daTa"))
 app.use(express.static('build'))
-
+/*
 let persons = [
       {
         "name": "Arto Hellas",
@@ -51,7 +51,7 @@ let persons = [
         "number": "39-23-6423122",
         "id": 4
       },
-]
+]*/
 
 app.get('/', (req, res) => {
     res.send('<h1>Osa 3</h1>')
